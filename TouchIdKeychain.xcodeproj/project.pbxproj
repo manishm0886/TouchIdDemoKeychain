@@ -13,6 +13,8 @@
 		3DE36D021E699E5F00232961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE36D001E699E5F00232961 /* Main.storyboard */; };
 		3DE36D041E699E5F00232961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE36D031E699E5F00232961 /* Assets.xcassets */; };
 		3DE36D071E699E5F00232961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE36D051E699E5F00232961 /* LaunchScreen.storyboard */; };
+		3DE36D101E699E7800232961 /* TouchIdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE36D0F1E699E7800232961 /* TouchIdManager.m */; };
+		3DE36D131E699F8700232961 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE36D121E699F8700232961 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		3DE36D031E699E5F00232961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DE36D061E699E5F00232961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DE36D081E699E5F00232961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE36D0E1E699E7800232961 /* TouchIdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIdManager.h; sourceTree = "<group>"; };
+		3DE36D0F1E699E7800232961 /* TouchIdManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIdManager.m; sourceTree = "<group>"; };
+		3DE36D121E699F8700232961 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE36D131E699F8700232961 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 			children = (
 				3DE36CF61E699E5F00232961 /* TouchIdKeychain */,
 				3DE36CF51E699E5F00232961 /* Products */,
+				3DE36D111E699F8700232961 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +69,8 @@
 				3DE36CFB1E699E5F00232961 /* AppDelegate.m */,
 				3DE36CFD1E699E5F00232961 /* ViewController.h */,
 				3DE36CFE1E699E5F00232961 /* ViewController.m */,
+				3DE36D0E1E699E7800232961 /* TouchIdManager.h */,
+				3DE36D0F1E699E7800232961 /* TouchIdManager.m */,
 				3DE36D001E699E5F00232961 /* Main.storyboard */,
 				3DE36D031E699E5F00232961 /* Assets.xcassets */,
 				3DE36D051E699E5F00232961 /* LaunchScreen.storyboard */,
@@ -77,6 +86,14 @@
 				3DE36CF81E699E5F00232961 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DE36D111E699F8700232961 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DE36D121E699F8700232961 /* Security.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +170,7 @@
 			files = (
 				3DE36CFF1E699E5F00232961 /* ViewController.m in Sources */,
 				3DE36CFC1E699E5F00232961 /* AppDelegate.m in Sources */,
+				3DE36D101E699E7800232961 /* TouchIdManager.m in Sources */,
 				3DE36CF91E699E5F00232961 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

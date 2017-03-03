@@ -7,12 +7,20 @@
 //
 
 #import "ViewController.h"
+#import "TouchIdManager.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *savedLabel;
 
 @end
 
 @implementation ViewController
+- (IBAction)save:(id)sender {
+    [TouchIdManager addKeychainPassword:@"Prabha"];
+}
+- (IBAction)fetch:(id)sender {
+    [TouchIdManager fetchKeychainPassword:@"Kumari"];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
